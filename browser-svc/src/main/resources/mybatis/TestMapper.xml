@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spy.databrowser.mapper.TestMapper">
+    <sql id="BASE_TABLE">teacher</sql>
+    <sql id="ALL_COLUMNS">no,name,sex,birthday,prof,depart</sql>
+    <select id="getAll" resultType="com.spy.databrowser.entity.Teacher">
+        select <include refid="ALL_COLUMNS"/>
+        from <include refid="BASE_TABLE"/>
+    </select>
+
+</mapper>
