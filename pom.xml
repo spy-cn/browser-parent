@@ -23,6 +23,7 @@
         <alibaba.version>2.2.1.RELEASE</alibaba.version>
         <mysql.version>5.1.47</mysql.version>
         <mybatis.version>2.1.4</mybatis.version>
+        <mybatis.pagehelper.version>1.2.3</mybatis.pagehelper.version>
         <lombok.version>1.18.10</lombok.version>
         <apache.version>3.8.1</apache.version>
     </properties>
@@ -47,6 +48,11 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${mybatis.pagehelper.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
